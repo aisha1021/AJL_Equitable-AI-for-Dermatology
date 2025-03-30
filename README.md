@@ -3,7 +3,6 @@
 ---
 
 ### **👥 Team Members**
-|  -----  | ----- | ----- |
 
 
 | Aisha | ----- | ----- |
@@ -18,12 +17,10 @@
 
 ## **🎯 Project Highlights**
 
-**Example:**
+* Built an ensemble model using transfer learning and finetuning of existing models to perform image classification on pictures of skin disease
+* Achieved a ranking of 2th place virtual team, 5th place on Kaggle leaderboard
+* Implemented data augmentation and image preprocessing techniques to optimize results of imbalanced data
 
-* Built an ensemble model using \[techniques used\] to solve \[Kaggle competition task\]
-* Achieved an F1 score of \[insert score\] and a ranking of 4th place on the final Kaggle Leaderboard
-* Used \[explainability tool\] to interpret model decisions
-* Implemented \[data preprocessing method\] to optimize results within compute constraints
 
 🔗 [Equitable AI for Dermatology | Kaggle Competition Page](https://www.kaggle.com/competitions/bttai-ajl-2025/overview)
 
@@ -92,9 +89,7 @@ We built and trained a variety of different models, including ResNet50, MobileNe
 
 Ensembling ResNet50, EfficientNetB3, EffiecientNetB4, and DenseNet121 using hard voting yielded the best result and highest accuracy of our attempts. 
 
-* Feature selection and Hyperparameter tuning strategies
-
-* Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
+* Training setup 
 Our training setup was 80% training and 20% validation. We used F1-score as our evaluation metric. For our baseline performance we measured using deep learning models pre-trained on large image datasets.
 
 ---
@@ -103,22 +98,13 @@ Our training setup was 80% training and 20% validation. We used F1-score as our 
 
 **Describe (as applicable):**
 
-* Performance metrics (e.g., Kaggle Leaderboard score, F1-score)
+* Performance metrics 
 Kaggle Leaderboard score: We oscillated between 3rd and 4th place on our final submissions.
 
-* How your model performed overall
-* How your model performed across different skin tones (AJL)
-* Insights from evaluating model fairness (AJL)
-
-**Potential visualizations to include:**
-
-* Confusion matrix, precision-recall curve, feature importance plot, prediction distribution, outputs from fairness or explainability tools
 
 ---
 
 ## **🖼️ Impact Narrative**
-
-**Answer the relevant questions below based on your competition:**
 
 **AJL challenge:**
 
@@ -129,8 +115,7 @@ Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi
 1. What steps did you take to address [model fairness](https://haas.berkeley.edu/wp-content/uploads/What-is-fairness_-EGAL2.pdf)? (e.g., leveraging data augmentation techniques to account for training dataset imbalances; using a validation set to assess model performance across different skin tones)
 We tried to use data augmentation to balance the training samples of different skin tones. We also looked at model fairness using separate validation across the different skin tones.
 2. What broader impact could your work have?
-It could help improve dermatology for underrepresented skin tones which can translate into ethical issues? in healthcare.
-//idk how i feel about issues here
+It could help improve dermatology for underrepresented skin tones which can translate into ethical issues in healthcare.
 
 ---
 
@@ -138,15 +123,11 @@ It could help improve dermatology for underrepresented skin tones which can tran
 
 **Address the following:**
 
-* What are some of the limitations of your model?
-
-
 * What would you do differently with more time/resources?
 
 We would potentially try using a CNN model that had not previously been trained on the ImageNet dataset. In doing so, we would be able to rescale the AJL dataset to be smaller sizes, and manipulate the CNN layers as necessary, as well as run for more epochs. This would potentially give us more flexibility and more efficiency in runtime. 
 
 * What additional datasets or techniques would you explore?
-
 
 Collect or incorporate external datasets with better representation of darker skin tones
 Experiment with GAN-based image augmentation to synthetically balance rare classes
@@ -154,10 +135,6 @@ Experiment with GAN-based image augmentation to synthetically balance rare class
 ---
 
 ## **📄 References & Additional Resources**
-
-* Cite any relevant papers, articles, or tools used in your project
-
-
 
 "What is Fairness?" by Berkeley Haas: https://haas.berkeley.edu/wp-content/uploads/What-is-fairness_-EGAL2.pdf
 TensorFlow documentation: https://www.tensorflow.org
