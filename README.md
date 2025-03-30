@@ -4,13 +4,7 @@
 
 ### **👥 Team Members**
 
-
-| Aisha | ----- | ----- |
-| Ana | ----- | ----- |
-| Mysara | ----- | ----- |
-| Rishita | ----- | ----- |
-| Yousra | ----- | ----- |
-| Zohreh | ----- | ----- |
+Aisha, Ana, Mysara, Rishita, Yousra, Zohreh
 
 
 ---
