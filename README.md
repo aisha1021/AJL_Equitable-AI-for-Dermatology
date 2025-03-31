@@ -1,5 +1,4 @@
-# BTT-Spring-AI-Studio-25
-# GitHub AJL Kaggle Competition!
+# Spring 2025 AI Studio: Equitable Dermatology AI
 ---
 
 ### **👥 Team Members**
