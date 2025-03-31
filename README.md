@@ -59,25 +59,15 @@ Label distribution
 Skin tone distribution
 Sample images per class
 Correlation heatmaps and histogram
-* Data exploration and preprocessing approaches
-* Challenges and assumptions when working with the dataset(s)
 
 
-
-**Potential visualizations to include:**
-
-* Plots, charts, heatmaps, feature visualizations, sample dataset images
-Histogram of class representations/ data distribution
-Accuracy conditioned on fitzpatrick scale
-Confusion Matrix
 
 ---
 
 ## **🧠 Model Development**
 
-**Describe (as applicable):**
 
-* Model(s) used (e.g., CNN with transfer learning, regression models)
+* Model(s) used 
 
 We built and trained a variety of different models, including ResNet50, MobileNet, EfficientNet, and DenseNet. Our method with training all these models was building each slowly and saving them after a certain run of epochs, then downloading them to save the history of their training. We would load them in when we wanted to train them on more epochs to be efficient.  After doing this with all the models, we ensemble the models together as a means of comparing their use using both hard and soft voting methods. Soft voting combines and averages the predictions of the models and chooses the model with the highest average prediction. Hard voting simply chooses the model with the highest votes in the prediction. 
 
@@ -90,7 +80,6 @@ Our training setup was 80% training and 20% validation. We used F1-score as our 
 
 ## **📈 Results & Key Findings**
 
-**Describe (as applicable):**
 
 * Performance metrics 
 Kaggle Leaderboard score: We oscillated between 3rd and 4th place on our final submissions.
@@ -102,20 +91,12 @@ Kaggle Leaderboard score: We oscillated between 3rd and 4th place on our final s
 
 **AJL challenge:**
 
-As Dr. Randi mentioned in her challenge overview, “Through poetry, art, and storytelling, you can reach others who might not know enough to understand what’s happening with the machine learning model or data visualizations, but might still be heavily impacted by this kind of work.”
-As you answer the questions below, consider using not only text, but also illustrations, annotated visualizations, poetry, or other creative techniques to make your work accessible to a wider audience.
-Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi6TlPviC3q/view) from the Algorithmic Justice League for inspiration!
-
-1. What steps did you take to address [model fairness](https://haas.berkeley.edu/wp-content/uploads/What-is-fairness_-EGAL2.pdf)? (e.g., leveraging data augmentation techniques to account for training dataset imbalances; using a validation set to assess model performance across different skin tones)
-We tried to use data augmentation to balance the training samples of different skin tones. We also looked at model fairness using separate validation across the different skin tones.
-2. What broader impact could your work have?
-It could help improve dermatology for underrepresented skin tones which can translate into ethical issues in healthcare.
+We tried to use data augmentation to balance the training samples of different skin tones. We also looked at model fairness using separate validation across the different skin tones. It could help improve dermatology for underrepresented skin tones which can translate into ethical issues in healthcare.
 
 ---
 
 ## **🚀 Next Steps & Future Improvements**
 
-**Address the following:**
 
 * What would you do differently with more time/resources?
 
