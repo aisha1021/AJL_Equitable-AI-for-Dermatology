@@ -140,7 +140,7 @@ The confusion matrix for the ensemble model, which uses soft voting, provides va
 
 ### **Accuracy and Misclassification Patterns:**
 
-- Overall, the model performs reasonably well in classifying most of the classes. However, the most frequent misclassifications occur between similar-looking or more challenging classes, as seen in the higher values in off-diagonal elements. This is typical in many multi-class classification tasks, especially with similar categories.
+- Overall, the model performs reasonably well in classifying some of the classes. However, the most frequent misclassifications occur between similar-looking or more challenging classes, as seen in the higher values in off-diagonal elements. This is typical in many multi-class classification tasks, especially with similar categories.
 
 - The diagonal values of the matrix show the number of correct predictions for each class. The overall diagonal sum indicates a decent level of accuracy in the classification process, though the model could still be refined to reduce misclassifications, especially for harder-to-classify categories.
 
