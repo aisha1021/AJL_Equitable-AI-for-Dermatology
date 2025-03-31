@@ -134,9 +134,9 @@ The confusion matrix for the ensemble model, which uses soft voting, provides va
 
 ### **Class Confusion:**
 
-- **Dermatofibroma** and **Dermatomyositis** are more frequently misclassified, as observed from the higher off-diagonal values in these rows and columns. This suggests that the model might struggle to differentiate between these particular classes.
+- **Basal-cell-carcinoma-morpheiform** and **malignant-melanoma** are more frequently misclassified, as observed from the higher off-diagonal values in these rows and columns. This suggests that the model might struggle to differentiate between these particular classes.
   
-- **Basal-cell-carcinoma-morpheiform**, **Dyshidrotic-eczema**, and **Keloid** show relatively higher accuracy, with fewer misclassifications, highlighting the model's better ability to identify these classes correctly.
+- **Prurigo-nodularis**, **Dyshidrotic-eczema**, and **Dermatomyositis** show relatively higher accuracy, with fewer misclassifications, highlighting the model's better ability to identify these classes correctly.
 
 ### **Accuracy and Misclassification Patterns:**
 
@@ -146,7 +146,7 @@ The confusion matrix for the ensemble model, which uses soft voting, provides va
 
 ### **Implications for Model Improvement:**
 
-- The soft voting method seems to have been effective in aggregating predictions from multiple models, boosting the overall performance. However, focusing on the more challenging classes (**Dermatofibroma** and **Dermatomyositis**) and further refining the model through techniques like class weighting or additional fine-tuning could further enhance performance.
+- The soft voting method seems to have been effective in aggregating predictions from multiple models, boosting the overall performance. However, focusing on the more challenging classes (**Basal-cell-carcinoma-morpheiform** and **malignant-melanoma**) and further refining the model through techniques like class weighting or additional fine-tuning could further enhance performance.
 
 - Visualizing the confusion matrix can guide efforts in identifying patterns of misclassification and can be used to focus on areas where the model struggles the most.
 
