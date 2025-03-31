@@ -189,5 +189,6 @@ This work highlights **ethical concerns in healthcare AI** and the need for **in
 * ["What is Fairness?" by Berkeley Haas](https://haas.berkeley.edu/wp-content/uploads/What-is-fairness_-EGAL2.pdf)
 * [TensorFlow Documentation](https://www.tensorflow.org)
 * [Kaggle Tutorials on Skin Classification](https://www.kaggle.com/code/smitisinghal/skin-disease-classification)
+* [Fine-tuning and Transfer Learning](https://www.tensorflow.org/tutorials/images/transfer_learning)
 
 ---
