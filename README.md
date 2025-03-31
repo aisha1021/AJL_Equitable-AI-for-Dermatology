@@ -38,9 +38,6 @@ The dataset for this competition can be located here: [Kaggle Dataset](https://w
 
 ---
 
-This revision replaces the Jupyter Notebook instructions with those for Python scripts, ensuring that users know how to execute the `.py` files.
----
-
 ## **🏗️ Project Overview**
 
 This competition, part of the Break Through Tech AI program in collaboration with the **Algorithmic Justice League**, focuses on a critical issue in dermatology AI: **underperformance for darker skin tones**.
@@ -62,22 +59,22 @@ Our goal was to train a machine learning model capable of classifying **21 diffe
 1. **Skin Condition Distribution (Before Augmentation)**  
    This chart shows the distribution of different skin conditions in the dataset before data augmentation. There is a noticeable class imbalance, with conditions like **squamous-cell-carcinoma**, **basal-cell-carcinoma**, and **folliculitis** being more prevalent, while conditions such as **seborrheic-keratosis** and **basal-cell-carcinoma-morpheiform** are underrepresented.
 
-   ![Skin Condition Distribution (Before Augmentation)]([link_to_image](https://github.com/aisha1021/AJL_AI-for-Equitable-Dermatology/blob/c6678f30bc76f740b1d6c91fb24f8acbc5f51133/images/Skin%20Condition%20Distribution%20(Before%20Augmentation).png))
+   ![Skin Condition Distribution (Before Augmentation)](https://github.com/aisha1021/AJL_AI-for-Equitable-Dermatology/blob/c6678f30bc76f740b1d6c91fb24f8acbc5f51133/images/Skin%20Condition%20Distribution%20(Before%20Augmentation).png)
 
 2. **Skin Tone Distribution (Before Augmentation)**  
    The dataset is also imbalanced across skin tones, with **Skin Tone 2** (Fitzpatrick scale) being the most represented, followed by **Skin Tone 3** and **Skin Tone 1**. Skin tones **5** and **6** are significantly underrepresented.
 
-   ![Skin Tone Distribution (Before Augmentation)]([link_to_image](https://github.com/aisha1021/AJL_AI-for-Equitable-Dermatology/blob/c6678f30bc76f740b1d6c91fb24f8acbc5f51133/images/Skin%20Tone%20Distribution%20(Before%20Augmentation).png))
+   ![Skin Tone Distribution (Before Augmentation)]([link_to_image](https://github.com/aisha1021/AJL_AI-for-Equitable-Dermatology/blob/c6678f30bc76f740b1d6c91fb24f8acbc5f51133/images/Skin%20Tone%20Distribution%20(Before%20Augmentation).png)
 
 3. **Skin Condition Distribution (After Augmentation)**  
    After applying data augmentation, the classes were balanced. Augmentation techniques like flipping, rotation, and brightness/contrast adjustments were used to create a more even distribution across the different conditions, allowing for better model training.
 
-   ![Skin Condition Distribution (After Augmentation)]([link_to_image](https://github.com/aisha1021/AJL_AI-for-Equitable-Dermatology/blob/c6678f30bc76f740b1d6c91fb24f8acbc5f51133/images/Skin%20Condition%20Distribution%20(After%20Augmentation).png))
+   ![Skin Condition Distribution (After Augmentation)]([link_to_image](https://github.com/aisha1021/AJL_AI-for-Equitable-Dermatology/blob/c6678f30bc76f740b1d6c91fb24f8acbc5f51133/images/Skin%20Condition%20Distribution%20(After%20Augmentation).png)
 
 4. **Skin Tone Distribution (After Augmentation)**  
    The augmentation process also addressed the skin tone imbalance. All skin tones, especially **Skin Tone 1, 2, 3**, and **5**, were balanced to have equal representation in the dataset, ensuring fairer model predictions across all skin tones.
 
-   ![Skin Tone Distribution (After Augmentation)]([link_to_image](https://github.com/aisha1021/AJL_AI-for-Equitable-Dermatology/blob/c6678f30bc76f740b1d6c91fb24f8acbc5f51133/images/Skin%20Tone%20Distribution%20(After%20Augmentation).png))
+   ![Skin Tone Distribution (After Augmentation)]([link_to_image](https://github.com/aisha1021/AJL_AI-for-Equitable-Dermatology/blob/c6678f30bc76f740b1d6c91fb24f8acbc5f51133/images/Skin%20Tone%20Distribution%20(After%20Augmentation).png)
 
 #### **Preprocessing Techniques:**
 * **Data Augmentation:** Techniques like flipping, rotation, and brightness/contrast adjustments were used to balance the skin tone representation across the dataset. This helped mitigate the underrepresentation of darker skin tones and rare skin conditions.
@@ -111,7 +108,7 @@ We experimented with and fine-tuned various deep learning architectures:
 Model Performance:
 Below is the accuracy and loss curve of a single model (DenseNet121) during initial training and fine-tuning, which illustrates the improvement in performance across epochs.
 
-   ![Accuracy_Loss_DenseNet121_Fine_tuning]([link_to_image](https://github.com/aisha1021/AJL_AI-for-Equitable-Dermatology/blob/c6678f30bc76f740b1d6c91fb24f8acbc5f51133/images/desnsenet121_history.png))
+   ![Accuracy_Loss_DenseNet121_Fine_tuning]([link_to_image](https://github.com/aisha1021/AJL_AI-for-Equitable-Dermatology/blob/c6678f30bc76f740b1d6c91fb24f8acbc5f51133/images/desnsenet121_history.png)
 
 ---
 
@@ -152,7 +149,7 @@ The confusion matrix for the ensemble model, which uses soft voting, provides va
 
 The following is the confusion matrix showing how the ensemble model performed across different categories:
 
-   ![Confusion_Matrix_ensemble_model]([link_to_image](https://github.com/aisha1021/AJL_AI-for-Equitable-Dermatology/blob/c6678f30bc76f740b1d6c91fb24f8acbc5f51133/images/Confusion%20Matrix.png))
+   ![Confusion_Matrix_ensemble_model]([link_to_image](https://github.com/aisha1021/AJL_AI-for-Equitable-Dermatology/blob/c6678f30bc76f740b1d6c91fb24f8acbc5f51133/images/Confusion%20Matrix.png)
    
 ---
 
