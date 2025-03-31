@@ -1,4 +1,4 @@
-# Algorithmic Justice League (AJL) Kaggle Competition: AI for Equitable Dermatology
+# Algorithmic Justice League (AJL) Kaggle Competition: Equitable AI for Dermatology
 ## Spring 2025 AI Studio
 ---
 
