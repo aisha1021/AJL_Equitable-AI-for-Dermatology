@@ -51,6 +51,9 @@ Our goal was to train a machine learning model capable of classifying **21 diffe
 ### **Dataset Overview:**
 * Utilized the official **Kaggle AJL dataset**, a subset of the **FitzPatrick17 dataset** (~17,000 dermatology images labeled with skin conditions and Fitzpatrick skin types).
 * Investigated **class imbalance** across **skin condition labels** and **skin tone categories**.
+* The dataset consists of approximately **4500 images** representing **21 skin conditions** from the **FitzPatrick17k dataset**, which contains over 100 dermatological conditions.
+* Images are sourced from two reputable dermatology websites: **DermaAmin** and **Atlas Dermatologico**.
+* The dataset contains a **range of skin tones** based on the **Fitzpatrick skin type (FST)** scale (from **1 to 6**), with **Skin Tone 2** being the most represented and **Skin Tones 5 and 6** being underrepresented.
 
 ### **Key Data Insights:**
 
@@ -75,7 +78,7 @@ Our goal was to train a machine learning model capable of classifying **21 diffe
 
 
 4. **Skin Tone Distribution (After Augmentation)**  
-   The augmentation process also addressed the skin tone imbalance. All skin tones, especially **Skin Tone 1, 2, 3**, and **5**, were balanced to have equal representation in the dataset, ensuring fairer model predictions across all skin tones.
+   The augmentation process also addressed the skin tone imbalance. All skin tones, especially **Skin Tone 1, 2, 3**, and **5**, were balanced to have approximately equal representation in the dataset, ensuring fairer model predictions across all skin tones.
 
    ![Skin Tone Distribution (After Augmentation)](https://github.com/aisha1021/AJL_AI-for-Equitable-Dermatology/blob/c6678f30bc76f740b1d6c91fb24f8acbc5f51133/images/Skin%20Tone%20Distribution%20(After%20Augmentation).png)
 
@@ -97,7 +100,6 @@ We experimented with and fine-tuned various deep learning architectures:
 
 ### **🌀 Training Strategy:**
 * Used **transfer learning** and **fine-tuned** models on the AJL dataset.
-* **80% training / 20% validation** split.
 * **Evaluation Metric:** Weighted **F1-score** (ensuring balanced performance across classes).
 
 ### **⚙️ Ensemble Learning:**
