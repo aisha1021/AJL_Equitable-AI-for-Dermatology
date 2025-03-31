@@ -190,6 +190,7 @@ This work highlights **ethical concerns in healthcare AI** and the need for **in
 * [TensorFlow Documentation](https://www.tensorflow.org)
 * [Kaggle Tutorials on Skin Classification](https://www.kaggle.com/code/smitisinghal/skin-disease-classification)
 * [Fine-tuning and Transfer Learning](https://www.tensorflow.org/tutorials/images/transfer_learning)
-* [An Integrated Deep Learning Model with EfficientNet and ResNet for Accurate Multi-Class Skin Disease Classification]([https://www.tensorflow.org/tutorials/images/transfer_learning](https://www.mdpi.com/2075-4418/15/5/551))
+* [An Integrated Deep Learning Model with EfficientNet and ResNet for Accurate Multi-Class Skin Disease Classification](https://www.mdpi.com/2075-4418/15/5/551)
+
 
 ---
