@@ -4,7 +4,7 @@
 
 ### **👥 Team Members**
 
-Aisha, Ana, Mysara, Rishita, Yousra, Zohreh
+Aisha Malik, Paulina Calderón (Ana), Mysara Elsayed, Rishita Dhalbisoi, Yousra Awad, Zohreh Ashtarilarki
 
 ---
 
