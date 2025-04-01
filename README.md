@@ -151,6 +151,12 @@ The ensemble of ResNet50, EfficientNetB3, EfficientNetB4, and DenseNet121 effect
 
 The confusion matrix for the ensemble model, which uses soft voting, provides valuable insights into its performance across different classes. Below are the key takeaways, including individual model performances and how the ensemble aggregates their strengths and weaknesses.
 
+### **Confusion Matrix:**
+
+The following confusion matrix shows the individual confusion matrices for each model (DenseNet121, EfficientNetB3, EfficientNetB4, and ResNet50) along with the ensemble model's confusion matrix, which aggregates the predictions of all four models across different categories:
+
+![Confusion_Matrix_ensemble_model](https://github.com/aisha1021/AJL_Equitable-AI-for--Dermatology/blob/572a6dcf8959d1316a2c88111520070d19056225/images/models_confusion_matrix.png)
+
 ### **Individual Model Performance:**
 
 - **DenseNet121**: This model made minimal misclassifications, only classifying 3 images as **acne-vulgaris** instead of **acne**. This shows that while DenseNet121 is generally effective, it occasionally struggles with these two similar classes.
@@ -186,12 +192,6 @@ The ensemble model, using soft voting, takes the strengths and weaknesses of eac
 - The soft voting method has proven effective in aggregating predictions from multiple models, boosting the overall performance. However, focusing on further refining the models' ability to differentiate between classes like **acne** and **acne-vulgaris** could help reduce misclassifications in the future. Techniques like class weighting or additional fine-tuning of individual models could further improve performance.
 
 - Visualizing the confusion matrix is a valuable tool for identifying patterns of misclassification and helps pinpoint the areas where the model struggles the most, guiding future improvements.
-
-### **Confusion Matrix:**
-
-The following confusion matrix shows the individual confusion matrices for each model (DenseNet121, EfficientNetB3, EfficientNetB4, and ResNet50) along with the ensemble model's confusion matrix, which aggregates the predictions of all four models across different categories:
-
-![Confusion_Matrix_ensemble_model](https://github.com/aisha1021/AJL_Equitable-AI-for--Dermatology/blob/572a6dcf8959d1316a2c88111520070d19056225/images/models_confusion_matrix.png)
 
 ---
 
