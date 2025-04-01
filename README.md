@@ -130,32 +130,50 @@ Below is the accuracy and loss curve of a single model (DenseNet121) during init
 
 ## **Confusion Matrix Analysis of the Ensemble Model (Soft Voting)**
 
-The confusion matrix for the ensemble model, which uses soft voting, provides valuable insights into its performance across different classes. Below are the key takeaways:
+The confusion matrix for the ensemble model, which uses soft voting, provides valuable insights into its performance across different classes. Below are the key takeaways, including individual model performances and how the ensemble aggregates their strengths and weaknesses.
+
+### **Individual Model Performance:**
+
+- **DenseNet121**: This model made minimal misclassifications, only classifying 3 images as **acne-vulgaris** instead of **acne**. This shows that while DenseNet121 is generally effective, it occasionally struggles with these two similar classes.
+
+- **EfficientNetB3**: Similar to DenseNet121, EfficientNetB3 also misclassified 2 images as **acne-vulgaris** instead of **acne**, highlighting a minor weakness in distinguishing between these two categories.
+
+- **EfficientNetB4**: This model performed exceptionally well with **100% accuracy**, making no misclassifications. Its flawless performance highlights its strong capability in handling the dataset.
+
+- **ResNet50**: ResNet50 misclassified 5 images as **acne-vulgaris** instead of **acne**, which reflects a similar issue as observed with DenseNet121 and EfficientNetB3.
 
 ### **Class Confusion:**
 
-- **Basal-cell-carcinoma-morpheiform** and **malignant-melanoma** are more frequently misclassified, as observed from the higher off-diagonal values in these rows and columns. This suggests that the model might struggle to differentiate between these particular classes.
-  
-- **Prurigo-nodularis**, **Dyshidrotic-eczema**, and **Dermatomyositis** show relatively higher accuracy, with fewer misclassifications, highlighting the model's better ability to identify these classes correctly.
+- **acne** and **acne-vulgaris** are the most frequently misclassified classes, with these images being confused with each other, as indicated by the higher off-diagonal values in the confusion matrix. This suggests that the models, particularly DenseNet121, EfficientNetB3, and ResNet50, struggle to differentiate between these two classes.
+
+- Other classes such as **Prurigo-nodularis**, **Dyshidrotic-eczema**, and **Dermatomyositis** show relatively higher accuracy, with fewer misclassifications, reflecting the models' better ability to correctly identify these categories.
+
+### **Ensemble Model Strengths:**
+
+The ensemble model, using soft voting, takes the strengths and weaknesses of each individual model into account. By aggregating the predictions of DenseNet121, EfficientNetB3, EfficientNetB4, and ResNet50, the ensemble is able to compensate for the individual misclassifications, particularly with **acne** and **acne-vulgaris**, improving overall performance.
+
+- **DenseNet121** and **EfficientNetB3** both misclassified a few images as **acne-vulgaris**, but **EfficientNetB4**, with its perfect accuracy, and **ResNet50**, while making some mistakes, help balance out the ensemble's predictions.
+
+- The ensemble method, by leveraging the diversity in individual models, results in a more robust performance, where the misclassifications of one model can be corrected by others, leading to an overall improvement.
 
 ### **Accuracy and Misclassification Patterns:**
 
-- Overall, the model performs reasonably well in classifying some of the classes. However, the most frequent misclassifications occur between similar-looking or more challenging classes, as seen in the higher values in off-diagonal elements. This is typical in many multi-class classification tasks, especially with similar categories.
+- Overall, the ensemble model performs exceptionally well in classifying most of the classes. However, the most frequent misclassifications occur between similar-looking or more challenging classes, particularly **acne** and **acne-vulgaris**. This is common in many multi-class classification tasks, especially with similar categories.
 
-- The diagonal values of the matrix show the number of correct predictions for each class. The overall diagonal sum indicates a decent level of accuracy in the classification process, though the model could still be refined to reduce misclassifications, especially for harder-to-classify categories.
+- The diagonal values of the matrix show the number of correct predictions for each class. The overall diagonal sum indicates a strong level of accuracy in the classification process, although there is room for refinement in distinguishing between the more challenging classes.
 
 ### **Implications for Model Improvement:**
 
-- The soft voting method seems to have been effective in aggregating predictions from multiple models, boosting the overall performance. However, focusing on the more challenging classes (**Basal-cell-carcinoma-morpheiform** and **malignant-melanoma**) and further refining the model through techniques like class weighting or additional fine-tuning could further enhance performance.
+- The soft voting method has proven effective in aggregating predictions from multiple models, boosting the overall performance. However, focusing on further refining the models' ability to differentiate between classes like **acne** and **acne-vulgaris** could help reduce misclassifications in the future. Techniques like class weighting or additional fine-tuning of individual models could further improve performance.
 
-- Visualizing the confusion matrix can guide efforts in identifying patterns of misclassification and can be used to focus on areas where the model struggles the most.
+- Visualizing the confusion matrix is a valuable tool for identifying patterns of misclassification and helps pinpoint the areas where the model struggles the most, guiding future improvements.
 
 ### **Confusion Matrix:**
 
 The following is the confusion matrix showing how the ensemble model performed across different categories:
 
-   ![Confusion_Matrix_ensemble_model](https://github.com/aisha1021/AJL_AI-for-Equitable-Dermatology/blob/c6678f30bc76f740b1d6c91fb24f8acbc5f51133/images/Confusion%20Matrix.png)
-   
+![Confusion_Matrix_ensemble_model](https://github.com/aisha1021/AJL_Equitable-AI-for--Dermatology/blob/572a6dcf8959d1316a2c88111520070d19056225/images/models_confusion_matrix.png)
+
 ---
 
 ## **🎨 Impact Narrative**
