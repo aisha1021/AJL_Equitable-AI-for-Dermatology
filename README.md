@@ -25,7 +25,7 @@ Aisha Malik, Paulina Calderón (Ana), Mysara Elsayed, Rishita Dhalbisoi, Yousra 
 1. **Cloning the Repository**
 To clone the repository to your local machine, use the following Git command:
 ```bash
-git clone https://github.com/aisha1021/AJL_AI-for-Equitable-Dermatology.git
+git clone https://github.com/aisha1021/AJL_Equitable-AI-for-Dermatology.git
 ```
 
 2. **Accessing The Datasets**
