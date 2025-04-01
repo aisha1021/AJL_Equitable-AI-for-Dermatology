@@ -101,7 +101,7 @@ Our goal was to train a machine learning model capable of classifying **21 diffe
   - **Normalization:** All image pixel values were scaled to a range of 0 to 1 by dividing by 255.0. This step ensures that the model's training process is more stable and improves convergence.
   - **Resizing:** Images were resized to a fixed size of 224x224 pixels, which is the standard input size for many pre-trained models (e.g., DenseNet121). This resizing step ensures compatibility across different models and provides consistent input dimensions.
 
-This approach ensures that the model is trained with a diverse set of images, improving its ability to generalize across various real-world scenarios. It also helps address any class imbalance or skin tone underrepresentation by providing more samples for minority classes and skin tones.
+   This approach ensures that the model is trained with a diverse set of images, improving its ability to generalize across various real-world scenarios. It also helps address any class imbalance or skin tone underrepresentation by providing more samples for minority classes and skin tones.
 ---
 
 ## **🧠 Model Development**
