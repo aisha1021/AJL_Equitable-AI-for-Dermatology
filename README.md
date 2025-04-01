@@ -4,7 +4,14 @@
 
 ### **👥 Team Members**
 
-Aisha Malik, Paulina Calderón (Ana), Mysara Elsayed, Rishita Dhalbisoi, Yousra Awad, Zohreh Ashtarilarki
+| Name              | GitHub Handle       | Contribution               |
+|------------------|-------------------|---------------------------|
+| Aisha Malik     | @aisha1021        | Trained and fine-tuned six pre-trained models (ResNet50, EfficientNetB3, EfficientNetB4, DenseNet121, MobileNetV3Large, and NASNetMobile). Developed an ensemble model combining the top four performing models using soft and hard voting techniques. |
+| Paulina Calderón (Ana) | @paucalderon      | [Describe contribution]   |
+| Mysara Elsayed  | @meesarelsa     | [Describe contribution]   |
+| Rishita Dhalbisoi | @rishitadhalbisoi  | [Describe contribution]   |
+| Yousra Awad     | @yawad2        | [Describe contribution]   |
+| Zohreh Ashtarilarki | @ZohrehAshtarilarki | [Describe contribution] |
 
 ---
 
