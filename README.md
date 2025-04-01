@@ -202,12 +202,24 @@ Our approach to the **AJL Challenge** aimed at addressing the issue of dermatolo
 
 * **Applying Data Augmentation to Balance Skin Tones:** To tackle the problem of underrepresentation of darker skin tones in medical datasets, we employed **data augmentation** techniques such as rotation, flipping, brightness adjustment, and more. This helped simulate a more diverse set of images, ensuring that our model was exposed to a variety of skin tones during training, and reducing the risk of bias toward lighter skin tones. This balanced dataset helped mitigate the skewed distribution often seen in medical imaging datasets.
   
-* **Evaluating Fairness with Separate Validation Metrics for Fitzpatrick Skin Types:** Instead of treating the skin tone as a single homogeneous category, we divided our validation metrics across distinct **Fitzpatrick skin types** (I-VI). This allowed us to evaluate the model's performance across a broader spectrum of skin tones and ensured that the model was not overly optimized for any specific subset of skin types. This evaluation helped us pinpoint any disparities in performance and fine-tune the model to ensure fairness and accuracy for all skin tones.
+* **Evaluating Fairness with Separate Validation Metrics for Fitzpatrick Skin Types:** Instead of treating the skin tone as a single homogeneous category, we divided our validation metrics across distinct **Fitzpatrick skin types**. This allowed us to evaluate the model's performance across a broader spectrum of skin tones and ensured that the model was not overly optimized for any specific subset of skin types. This evaluation helped us pinpoint any disparities in performance and fine-tune the model to ensure fairness and accuracy for all skin tones.
 
 * **Promoting Equitable AI Practices:** Our efforts in ensuring that the model performed equitably across all skin tones are directly aligned with the need to mitigate disparities in medical AI. By focusing on **inclusive datasets** and **fairness metrics**, we worked towards building a dermatology model that could potentially reduce the diagnostic gaps seen in current AI systems, where models tend to underperform when faced with images of darker skin tones.
 
 This work shines a spotlight on **ethical concerns in healthcare AI**, where algorithmic biases can have life-altering consequences, particularly in medical diagnosis. Our approach calls for a shift in AI development to ensure that **inclusive datasets** are not just optional, but essential for any AI application in sensitive domains like dermatology.
 
+---
+
+### **Model Error Rate Across Fitzpatrick Skin Types:**
+The results from our model error rate analysis across Fitzpatrick skin types underscore the effectiveness of our fairness-focused approach. The bar chart visualizing the error rates for different models shows consistently low error rates across the Fitzpatrick skin types, with the **ensemble model** demonstrating a robust performance. 
+
+- For most skin types, the error rates are near zero, which indicates that the models are achieving high accuracy.
+- Notably, the **ResNet50** model shows a slightly higher error rate for Fitzpatrick types 1, 2, and 4, which highlights a small disparity that was addressed during the fine-tuning process. However, this may be due to the original imbalance in the image data, which had a higher number of images from these three skin types, causing the model to be more susceptible to making errors in these categories.
+- The **ensemble model** outperforms individual models, further emphasizing the importance of combining multiple models to minimize bias and enhance accuracy across diverse skin types.
+
+  ![model_error_rate_skin_tones](https://github.com/aisha1021/AJL_Equitable-AI-for-Dermatology/blob/a918ea45b9a5b5647b6ebcb2f7686438e058f92a/images/model_error_rate_skin_tones.png)
+
+These results not only demonstrate the effectiveness of our approach but also affirm the importance of inclusivity in dermatology AI. By focusing on fairness and accuracy for all skin tones, we aim to bridge the diagnostic gaps that exist in current AI systems. This reinforces our commitment to developing AI models that are not just accurate, but also ethical and equitable for all users.
 ---
 
 ## **🚀 Next Steps & Future Improvements**
