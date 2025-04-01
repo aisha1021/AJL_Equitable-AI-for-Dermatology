@@ -176,7 +176,7 @@ The following confusion matrix shows the individual confusion matrices for each 
 
 ### **Class Confusion:**
 
-- **acne** and **acne-vulgaris** are the most frequently misclassified classes, with these images being confused with each other, as indicated by the higher off-diagonal values in the confusion matrix. This suggests that the models, particularly DenseNet121, EfficientNetB3, and ResNet50, struggle to differentiate between these two classes.
+- **Acne** and **Acne-vulgaris** are the most frequently misclassified classes, with these images being confused with each other, as indicated by the higher off-diagonal values in the confusion matrix. This suggests that the models, particularly DenseNet121, EfficientNetB3, and ResNet50, struggle to differentiate between these two classes.
 
 - Other classes such as **Prurigo-nodularis**, **Dyshidrotic-eczema**, and **Dermatomyositis** show relatively higher accuracy, with fewer misclassifications, reflecting the models' better ability to correctly identify these categories.
 
