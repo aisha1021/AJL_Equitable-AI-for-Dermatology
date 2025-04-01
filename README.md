@@ -11,7 +11,9 @@ Aisha Malik, Paulina Calderón (Ana), Mysara Elsayed, Rishita Dhalbisoi, Yousra 
 ## **🎯 Project Highlights**
 
 * Developed an ensemble model using transfer learning and fine-tuning of multiple models for image classification of skin diseases.
-* Achieved a ranking of **2nd place virtual team** and **5th place on the Kaggle leaderboard**.
+* Achieved a ranking of **2nd place virtual team** and **4th place overall** on the Kaggle leaderboard.
+* Secured a **0.72415 accuracy** on the public leaderboard (2nd place virtual team and 4th place overall).
+* Achieved a **0.68409 accuracy** on the private leaderboard, securing **5th place**.
 * Implemented data augmentation and image preprocessing techniques to mitigate class imbalance and enhance model performance.
 
 🔗 [Equitable AI for Dermatology | Kaggle Competition Page](https://www.kaggle.com/competitions/bttai-ajl-2025/overview)
@@ -83,9 +85,23 @@ Our goal was to train a machine learning model capable of classifying **21 diffe
    ![Skin Tone Distribution (After Augmentation)](https://github.com/aisha1021/AJL_AI-for-Equitable-Dermatology/blob/c6678f30bc76f740b1d6c91fb24f8acbc5f51133/images/Skin%20Tone%20Distribution%20(After%20Augmentation).png)
 
 #### **Preprocessing Techniques:**
-* **Data Augmentation:** Techniques like flipping, rotation, and brightness/contrast adjustments were used to balance the skin tone representation across the dataset. This helped mitigate the underrepresentation of darker skin tones and rare skin conditions.
-* **Normalization & Resizing:** Image sizes were standardized to consistent dimensions for model training. This included resizing all images to a fixed size to ensure compatibility across different models.
 
+- **Data Augmentation:**
+  To address the class imbalance and improve model generalization, various data augmentation techniques were employed. These techniques aimed to create a more balanced representation of skin tones and skin conditions across the dataset, particularly focusing on underrepresented categories. 
+  - **Flipping:** Images were randomly flipped horizontally to introduce diversity and simulate different viewing angles.
+  - **Rotation:** Images were randomly rotated by up to 30 degrees to help the model generalize over various orientations of skin conditions.
+  - **Shifting:** Random shifts in both horizontal and vertical directions (up to 20% of the image width/height) were applied to simulate different positions of the subject.
+  - **Zooming & Shearing:** These transformations help the model learn to handle images with varying scales and slight distortions.
+  - **Brightness/Contrast Adjustments:** Random modifications to brightness and contrast were applied to simulate different lighting conditions, ensuring the model can handle diverse image qualities.
+
+  This augmentation not only mitigated the underrepresentation of darker skin tones but also addressed rare skin conditions, providing a more diverse set of training data.
+
+- **Normalization & Resizing:**
+  To ensure consistent input to the neural network, image preprocessing involved the following steps:
+  - **Normalization:** All image pixel values were scaled to a range of 0 to 1 by dividing by 255.0. This step ensures that the model's training process is more stable and improves convergence.
+  - **Resizing:** Images were resized to a fixed size of 224x224 pixels, which is the standard input size for many pre-trained models (e.g., DenseNet121). This resizing step ensures compatibility across different models and provides consistent input dimensions.
+
+This approach ensures that the model is trained with a diverse set of images, improving its ability to generalize across various real-world scenarios. It also helps address any class imbalance or skin tone underrepresentation by providing more samples for minority classes and skin tones.
 ---
 
 ## **🧠 Model Development**
@@ -120,13 +136,16 @@ Below is the accuracy and loss curve of a single model (DenseNet121) during init
 ### **📈 Results & Key Findings**
 
 ### **📊 Performance Metrics:**
-* **Final Kaggle Leaderboard Score:** Fluctuated between **3rd and 4th place** in final submissions.
-* **Best Model Performance:** Ensemble of ResNet50, EfficientNetB3, EfficientNetB4, and DenseNet121 using soft voting.
+* **Final Kaggle Leaderboard Score:** Our team's final ranking fluctuated between **3rd and 4th place** on the leaderboard during the competition's final submissions, with a private leaderboard accuracy of **0.68409**, securing **5th place**. On the public leaderboard, we achieved an accuracy of **0.72415**, placing **2nd as a virtual team** and **4th overall**.
+* **Best Model Performance:** The most successful model was an **ensemble of ResNet50, EfficientNetB3, EfficientNetB4, and DenseNet121**. These models were combined using **soft voting** to leverage the strengths of each architecture and improve overall performance. This ensemble approach not only enhanced accuracy but also helped the model generalize better across various skin tones and conditions.
 * **Observations:**
-  - Ensembling significantly improved accuracy and fairness.
-  - MobileNet and NASNet performed **worse** than expected and were excluded from the final model.
+  - **Ensembling Significantly Improved Performance:** By combining multiple models, we saw a noticeable improvement in both accuracy and fairness. The ensemble mitigated the weaknesses of individual models, providing more robust predictions across diverse image types.
+  - **Model Exclusions:** Models like **MobileNet** and **NASNet** underperformed relative to expectations, particularly in terms of both accuracy and fairness. Their inability to generalize well across the diverse dataset led to their exclusion from the final ensemble model. Despite their efficiency in other scenarios, these models struggled with the specific nuances of the dermatological image classification task.
+  - **Model Calibration:** After training, we fine-tuned the models' hyperparameters and utilized techniques like **learning rate annealing** and **early stopping** to avoid overfitting and ensure that the ensemble performed optimally across both the public and private leaderboards.
+  
+The ensemble of ResNet50, EfficientNetB3, EfficientNetB4, and DenseNet121 effectively leveraged the strengths of each model, resulting in better overall performance and higher rankings in the competition.
 
----
+--- 
 
 ## **Confusion Matrix Analysis of the Ensemble Model (Soft Voting)**
 
@@ -179,26 +198,32 @@ The following confusion matrix shows the individual confusion matrices for each 
 ## **🎨 Impact Narrative**
 
 ### **AJL Challenge:**
-Our approach tackled dermatology AI bias by:
-* **Applying data augmentation** to balance training samples across skin tones.
-* **Evaluating fairness** through separate validation metrics for different Fitzpatrick skin types.
-* **Promoting equitable AI practices** that could mitigate disparities in medical diagnosis for underrepresented skin tones.
+Our approach to the **AJL Challenge** aimed at addressing the issue of dermatology AI bias by focusing on inclusivity and fairness. Here's how we made an impact:
 
-This work highlights **ethical concerns in healthcare AI** and the need for **inclusive datasets** in dermatology models.
+* **Applying Data Augmentation to Balance Skin Tones:** To tackle the problem of underrepresentation of darker skin tones in medical datasets, we employed **data augmentation** techniques such as rotation, flipping, brightness adjustment, and more. This helped simulate a more diverse set of images, ensuring that our model was exposed to a variety of skin tones during training, and reducing the risk of bias toward lighter skin tones. This balanced dataset helped mitigate the skewed distribution often seen in medical imaging datasets.
+  
+* **Evaluating Fairness with Separate Validation Metrics for Fitzpatrick Skin Types:** Instead of treating the skin tone as a single homogeneous category, we divided our validation metrics across distinct **Fitzpatrick skin types** (I-VI). This allowed us to evaluate the model's performance across a broader spectrum of skin tones and ensured that the model was not overly optimized for any specific subset of skin types. This evaluation helped us pinpoint any disparities in performance and fine-tune the model to ensure fairness and accuracy for all skin tones.
+
+* **Promoting Equitable AI Practices:** Our efforts in ensuring that the model performed equitably across all skin tones are directly aligned with the need to mitigate disparities in medical AI. By focusing on **inclusive datasets** and **fairness metrics**, we worked towards building a dermatology model that could potentially reduce the diagnostic gaps seen in current AI systems, where models tend to underperform when faced with images of darker skin tones.
+
+This work shines a spotlight on **ethical concerns in healthcare AI**, where algorithmic biases can have life-altering consequences, particularly in medical diagnosis. Our approach calls for a shift in AI development to ensure that **inclusive datasets** are not just optional, but essential for any AI application in sensitive domains like dermatology.
 
 ---
 
 ## **🚀 Next Steps & Future Improvements**
 
 ### **🧠 Future Directions:**
-* **Alternative Model Architectures:**
-  - Explore **custom CNNs** instead of pre-trained ImageNet models.
-  - Implement models designed **from scratch** for dermatology classification.
 
-* **Additional Techniques:**
-  - **Use external datasets** to improve skin tone representation.
-  - **Apply GAN-based augmentation** to generate synthetic images and balance underrepresented classes.
-  - **Investigate attention-based models** (e.g., Vision Transformers) for improved feature extraction.
+* **Alternative Model Architectures:**
+  - **Explore Custom CNNs:** While pre-trained models like ResNet and EfficientNet offer significant benefits due to their generalization, we plan to **design custom convolutional neural networks (CNNs)** tailored specifically for dermatology classification. By leveraging domain-specific architectural choices, we hope to build models that are not only more efficient but also more effective in capturing dermatological features unique to skin diseases.
+  - **Implement Models from Scratch:** Another direction is to explore creating **models from scratch**, using deep learning techniques that are fully customized for dermatology. This would allow us to better optimize the architecture for specific dermatological features, potentially enhancing performance in rare and underrepresented conditions.
+
+* **Additional Techniques for Model Enhancement:**
+  - **Use External Datasets to Improve Skin Tone Representation:** To further improve our model's fairness and performance, we plan to incorporate **external dermatology datasets** that contain a wider and more representative variety of skin tones. By augmenting our dataset with more diverse images, we can improve the model's generalization capabilities and ensure it performs better across all skin types.
+  - **Apply GAN-Based Augmentation for Synthetic Image Generation:** **Generative Adversarial Networks (GANs)** could be used to **generate synthetic images** to augment underrepresented classes. This method has the potential to generate high-quality dermatological images that mirror real-world data, thus improving class balance and providing additional training examples for rare skin conditions. This could be especially useful in addressing imbalances for underrepresented skin conditions and rare diseases.
+  - **Investigate Attention-Based Models (e.g., Vision Transformers):** Attention mechanisms, especially **Vision Transformers (ViTs)**, offer an alternative approach to image classification that could improve our model's ability to focus on critical regions of an image. By capturing long-range dependencies and learning more robust features from complex images, attention-based models have shown significant potential in image recognition tasks. This could lead to enhanced performance in dermatology models where fine-grained feature extraction is crucial for accurate diagnosis.
+
+These future directions aim to further enhance the robustness, fairness, and generalization of dermatology AI models, ultimately contributing to a more equitable AI system in healthcare.
 
 ---
 
