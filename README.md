@@ -219,7 +219,7 @@ The results from our model error rate analysis across Fitzpatrick skin types und
 
   ![model_error_rate_skin_tones](https://github.com/aisha1021/AJL_Equitable-AI-for-Dermatology/blob/a918ea45b9a5b5647b6ebcb2f7686438e058f92a/images/model_error_rate_skin_tones.png)
 
-These results not only demonstrate the effectiveness of our approach but also affirm the importance of inclusivity in dermatology AI. By focusing on fairness and accuracy for all skin tones, we aim to bridge the diagnostic gaps that exist in current AI systems. This reinforces our commitment to developing AI models that are not just accurate, but also ethical and equitable for all users.
+   These results not only demonstrate the effectiveness of our approach but also affirm the importance of inclusivity in dermatology AI. By focusing on fairness and accuracy for all skin tones, we aim to bridge the diagnostic gaps that exist in current AI systems. This reinforces our commitment to developing AI models that are not just accurate, but also ethical and equitable for all users.
 ---
 
 ## **🚀 Next Steps & Future Improvements**
