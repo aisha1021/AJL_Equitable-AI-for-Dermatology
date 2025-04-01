@@ -170,7 +170,7 @@ The ensemble model, using soft voting, takes the strengths and weaknesses of eac
 
 ### **Confusion Matrix:**
 
-The following is the confusion matrix showing how the ensemble model performed across different categories:
+The following confusion matrix shows the individual confusion matrices for each model (DenseNet121, EfficientNetB3, EfficientNetB4, and ResNet50) along with the ensemble model's confusion matrix, which aggregates the predictions of all four models across different categories:
 
 ![Confusion_Matrix_ensemble_model](https://github.com/aisha1021/AJL_Equitable-AI-for--Dermatology/blob/572a6dcf8959d1316a2c88111520070d19056225/images/models_confusion_matrix.png)
 
