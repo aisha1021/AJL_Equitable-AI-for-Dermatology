@@ -66,7 +66,7 @@ Our goal was to train a machine learning model capable of classifying **21 diffe
 
 
 2. **Skin Tone Distribution (Before Augmentation)**  
-   The dataset is also imbalanced across skin tones, with **Skin Tone 2** (Fitzpatrick scale) being the most represented, followed by **Skin Tone 3** and **Skin Tone 1**. Skin tones **5** and **6** are significantly underrepresented.
+   The dataset is also imbalanced across skin tones, with **Skin Tone 2** (Fitzpatrick scale) being the most represented, followed by **Skin Tone 3** and **Skin Tone 1**. Skin tones **-1**, **5** and **6** are significantly underrepresented.
 
    ![Skin Tone Distribution (Before Augmentation)](https://github.com/aisha1021/AJL_AI-for-Equitable-Dermatology/blob/c6678f30bc76f740b1d6c91fb24f8acbc5f51133/images/Skin%20Tone%20Distribution%20(Before%20Augmentation).png)
 
