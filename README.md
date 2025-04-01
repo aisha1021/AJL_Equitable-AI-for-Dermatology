@@ -47,11 +47,29 @@ The dataset for this competition can be located here: [Kaggle Dataset](https://w
 
 ---
 
-## **🏗️ Project Overview**
+Here's an expanded version of your **Project Overview** section:  
 
-This competition, part of the Break Through Tech AI program in collaboration with the **Algorithmic Justice League**, focuses on a critical issue in dermatology AI: **underperformance for darker skin tones**.
+---
 
-Our goal was to train a machine learning model capable of classifying **21 different skin conditions** across various skin tones, ensuring fairness and accuracy in medical AI applications.
+## **🏗️ Project Overview**  
+
+This competition, part of the **Spring 2025 AI Studio** by **Break Through Tech AI**, is in collaboration with the **Algorithmic Justice League (AJL)** to address a critical issue in dermatology AI: **underperformance for darker skin tones**.  
+
+### **🌍 The Challenge**  
+AI is transforming healthcare, yet many dermatology AI models fail to perform well for people with darker skin tones due to a lack of diverse training data. This can lead to misdiagnoses, delayed treatments, and healthcare disparities. Our mission is to build a **more inclusive machine learning model** that accurately classifies **21 different skin conditions across various skin tones**—promoting fairness, equity, and improved healthcare outcomes.  
+
+### **📌 How the Competition Works**  
+- Teams of AI Fellows from **MIT, UCLA, and virtual programs** work together to develop the best-performing model.  
+- The competition is hosted on **Kaggle**, where models are evaluated using a **weighted F1 score** to account for class imbalances.  
+- Graduate student advisors and industry experts provide mentorship and resources throughout the process.  
+- Submissions are judged on **model performance** (highest leaderboard score) and the **quality of the final GitHub write-up**, which must incorporate fairness and explainability analyses.  
+
+### **🛠️ Our Approach**  
+To tackle this challenge, we are leveraging:  
+- **Data Augmentation**: Expanding training data using techniques like flipping and rotation to ensure balanced representation across skin tones.  
+- **Transfer Learning**: Fine-tuning pre-trained models to improve classification accuracy while reducing computational costs.  
+
+By addressing bias in dermatology AI, our work contributes to broader research efforts by **Stanford, MIT Media Lab**, and other institutions focused on equitable, explainable AI models.  
 
 ---
 
@@ -178,7 +196,7 @@ The following confusion matrix shows the individual confusion matrices for each 
 
 - **Acne** and **Acne-vulgaris** are the most frequently misclassified classes, with these images being confused with each other, as indicated by the higher off-diagonal values in the confusion matrix. This suggests that the models, particularly DenseNet121, EfficientNetB3, and ResNet50, struggle to differentiate between these two classes.
 
-- Other classes such as **Prurigo-nodularis**, **Dyshidrotic-eczema**, and **Dermatomyositis** show relatively higher accuracy, with fewer misclassifications, reflecting the models' better ability to correctly identify these categories.
+- Other classes such as **Prurigo-nodularis**, **Eczema**, and **Dermatomyositis** show relatively higher accuracy, with fewer to none misclassifications, reflecting the models' better ability to correctly identify these categories.
 
 ### **Ensemble Model Strengths:**
 
