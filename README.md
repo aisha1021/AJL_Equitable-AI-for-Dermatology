@@ -11,7 +11,7 @@
 | Mysara Elsayed  | @meesarelsa     | [Describe contribution]   |
 | Rishita Dhalbisoi | @rishitadhalbisoi  | [Describe contribution]   |
 | Yousra Awad     | @yawad2        | Performed data exploration and class distribution analysis, explored augmentation methods, trained and fine-tuned ResNet50 and EfficientNetB3    |
-| Zohreh Ashtarilarki | @ZohrehAshtarilarki | [Describe contribution] |
+| Zohreh Ashtarilarki | @ZohrehAshtarilarki | Performed data preprocessing, label encoding, class imbalance handling using combined disease and skin tone–based class weights, and tailored data augmentation strategies. Trained and fine-tuned a CNN+ANN model from scratch, ResNet50, and EfficientNetB4 |
 
 ---
 
