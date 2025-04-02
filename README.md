@@ -10,7 +10,7 @@
 | Paulina Calderón (Ana) | @paucalderon      | [Describe contribution]   |
 | Mysara Elsayed  | @meesarelsa     | [Describe contribution]   |
 | Rishita Dhalbisoi | @rishitadhalbisoi  | [Describe contribution]   |
-| Yousra Awad     | @yawad2        | [Describe contribution]   |
+| Yousra Awad     | @yawad2        | Performed data exploration and class distribution analysis, explored augmentation methods, trained and fine-tuned ResNet50 and EfficientNetB3    |
 | Zohreh Ashtarilarki | @ZohrehAshtarilarki | [Describe contribution] |
 
 ---
