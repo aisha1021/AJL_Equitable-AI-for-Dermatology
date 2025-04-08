@@ -6,10 +6,10 @@
 
 | Name              | GitHub Handle       | Contribution               |
 |------------------|-------------------|---------------------------|
-| Aisha Malik     | @aisha1021        | Trained and fine-tuned six pre-trained CNNs (ResNet50, EfficientNetB3, EfficientNetB4, DenseNet121, MobileNetV3Large, and NASNetMobile) on 100,000+ augmented images for dermatology image classification. Evaluated various CNN architectures, including CNN+ANN hybrids, to optimize feature extraction and classification. Applied label encoding, stratified sampling for balanced skin tone distribution, and multiple image augmentation techniques (rotation, flipping, contrast adjustment) to address class imbalance. Optimized model performance with learning rate scheduling, early stopping, and weight regularization. Developed an ensemble model combining the top four performing models using soft and hard voting techniques, which achieved the highest accuracy score. |
-| Paulina Calderón (Ana) | @paucalderon      | [Describe contribution]   |
-| Mysara Elsayed  | @meesarelsa     | [Describe contribution]   |
-| Rishita Dhalbisoi | @rishitadhalbisoi  | [Describe contribution]   |
+| Aisha Malik     | @aisha1021        | Trained and fine-tuned six pre-trained models (ResNet50, EfficientNetB3, EfficientNetB4, DenseNet121, MobileNetV3Large, and NASNetMobile). Optimized CNN and CNN+ANN hybrid architectures for feature extraction and classification by applying label encoding, stratified sampling, image augmentation, and enhancing model performance through learning rate scheduling, early stopping, and weight regularization. Developed an ensemble model combining the top four performing models using soft and hard voting techniques, which achieved the highest accuracy score. |
+| Paulina Calderón (Ana) | @paucalderon      | ...   |
+| Mysara Elsayed  | @meesarelsa     | ...   |
+| Rishita Dhalbisoi | @rishitadhalbisoi  | ...   |
 | Yousra Awad     | @yawad2        | Performed data exploration and class distribution analysis, explored augmentation methods, trained and fine-tuned ResNet50 and EfficientNetB3    |
 | Zohreh Ashtarilarki | @ZohrehAshtarilarki | Performed data preprocessing, label encoding, class imbalance handling using combined disease and skin tone–based class weights, and tailored data augmentation strategies. Trained and fine-tuned a CNN+ANN model from scratch, ResNet50, and EfficientNetB4 |
 
