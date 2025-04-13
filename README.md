@@ -2,19 +2,6 @@
 ## Spring 2025 AI Studio
 ---
 
-### **👥 Team Members**
-
-| Name              | GitHub Handle       | Contribution               |
-|------------------|-------------------|---------------------------|
-| Aisha Malik     | @aisha1021        | Trained and fine-tuned six pre-trained models (ResNet50, EfficientNetB3, EfficientNetB4, DenseNet121, MobileNetV3Large, and NASNetMobile). Optimized CNN and CNN+ANN hybrid architectures for feature extraction and classification by applying label encoding, stratified sampling, image augmentation, and enhancing model performance through learning rate scheduling, early stopping, and weight regularization. Developed an ensemble model combining the top four performing models using soft and hard voting techniques, which achieved the highest accuracy score. |
-| Paulina Calderón (Ana) | @paucalderon      | ...   |
-| Mysara Elsayed  | @meesarelsa     | ...   |
-| Rishita Dhalbisoi | @rishitadhalbisoi  | ...   |
-| Yousra Awad     | @yawad2        | Performed data exploration and class distribution analysis, explored augmentation methods, trained and fine-tuned ResNet50 and EfficientNetB3    |
-| Zohreh Ashtarilarki | @ZohrehAshtarilarki | Performed data preprocessing, label encoding, class imbalance handling using combined disease and skin tone–based class weights, and tailored data augmentation strategies. Trained and fine-tuned a CNN+ANN model from scratch, ResNet50, and EfficientNetB4 |
-
----
-
 ## **🎯 Project Highlights**
 
 * Developed an ensemble model using transfer learning and fine-tuning of multiple models for image classification of skin diseases.
@@ -258,6 +245,19 @@ The results from our model error rate analysis across Fitzpatrick skin types und
   - **Investigate Attention-Based Models (e.g., Vision Transformers):** Attention mechanisms, especially **Vision Transformers (ViTs)**, offer an alternative approach to image classification that could improve our model's ability to focus on critical regions of an image. By capturing long-range dependencies and learning more significant features from complex images, attention-based models have shown significant potential in image recognition tasks. This could lead to enhanced performance in dermatology models where fine-grained feature extraction is crucial for accurate diagnosis.
 
 These future directions aim to further enhance the accuracy, fairness, and generalization of dermatology AI models, ultimately contributing to a more equitable AI system in healthcare.
+
+---
+
+### **👥 Team Members**
+
+| Name              | GitHub Handle       | Contribution               |
+|------------------|-------------------|---------------------------|
+| Aisha Malik     | @aisha1021        | Trained and fine-tuned six pre-trained models (ResNet50, EfficientNetB3, EfficientNetB4, DenseNet121, MobileNetV3Large, and NASNetMobile). Optimized CNN and CNN+ANN hybrid architectures for feature extraction and classification by applying label encoding, stratified sampling, image augmentation, and enhancing model performance through learning rate scheduling, early stopping, and weight regularization. Developed an ensemble model combining the top four performing models using soft and hard voting techniques, which achieved the highest accuracy score. |
+| Paulina Calderón (Ana) | @paucalderon      | ...   |
+| Mysara Elsayed  | @meesarelsa     | ...   |
+| Rishita Dhalbisoi | @rishitadhalbisoi  | ...   |
+| Yousra Awad     | @yawad2        | Performed data exploration and class distribution analysis, explored augmentation methods, trained and fine-tuned ResNet50 and EfficientNetB3    |
+| Zohreh Ashtarilarki | @ZohrehAshtarilarki | Performed data preprocessing, label encoding, class imbalance handling using combined disease and skin tone–based class weights, and tailored data augmentation strategies. Trained and fine-tuned a CNN+ANN model from scratch, ResNet50, and EfficientNetB4 |
 
 ---
 
