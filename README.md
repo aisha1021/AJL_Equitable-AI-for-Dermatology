@@ -47,9 +47,6 @@ The dataset for this competition can be located here: [Kaggle Dataset](https://w
 
 ---
 
-Here's an expanded version of your **Project Overview** section:  
-
----
 
 ## **🏗️ Project Overview**  
 
